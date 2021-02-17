@@ -48,9 +48,11 @@ export default {
       getLoginStatus(params)
         .then(res => {
           if (res.code == 1) {
+            // 存用户名
+            localStorage.setItem('username', this.form.username);
             this.notify('登录成功', 'success');
-          }
-          else {
+            this.$router.push('/info');
+          } else {
             this.notify('登录失败', 'error');
           }
         });

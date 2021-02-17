@@ -6,7 +6,8 @@ axios.defaults.timeout = 5000
 // 允许跨域
 axios.defaults.withCredentials = true
 // 响应头Content-Type
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8'
+axios.defaults.headers.post['Content-Type'] = 'application/json'
+// 'application/x-www-form-urlencoded;charset=utf-8'
 // 基础url
 axios.defaults.baseURL = 'http://localhost:8888/musicserver'
 
@@ -67,4 +68,3 @@ export function post (url, data = {}) {
       })
   });
 }
-
