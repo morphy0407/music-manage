@@ -59,5 +59,8 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+.sidebar-el-menu:not(el-menu--collapse) {
+  width: 150px;
+}
 </style>

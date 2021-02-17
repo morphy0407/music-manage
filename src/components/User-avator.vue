@@ -43,7 +43,7 @@ export default {
 
 .user-name {
   margin-left: 10px;
-
+  /*margin-bottom: 10px;*/
 }
 
 .el-dropdown-link {
